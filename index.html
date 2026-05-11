@@ -80,22 +80,6 @@
     </div>
 </nav>
 
-<script>
-    const btn = document.getElementById('menu-btn');
-    const menu = document.getElementById('mobile-menu');
-
-    btn.addEventListener('click', () => {
-        menu.classList.toggle('hidden');
-    });
-
-    // Zatvori meni kad se klikne na neki od linkova
-    document.querySelectorAll('#mobile-menu a').forEach(link => {
-        link.addEventListener('click', () => {
-            menu.classList.add('hidden');
-        });
-    });
-</script>
-
     <section class="relative min-h-screen flex items-center justify-center pt-32 lg:pt-20 hero-gradient overflow-hidden">
         <div class="max-w-7xl mx-auto px-6 z-10 w-full">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -669,5 +653,21 @@
             setTimeout(() => { msg.style.opacity = '0'; }, 2000);
         }
     </script>
+
+    <script>
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+
+    btn.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+    });
+
+    // Zatvori meni kad se klikne na neki od linkova
+    document.querySelectorAll('#mobile-menu a').forEach(link => {
+        link.addEventListener('click', () => {
+            menu.classList.add('hidden');
+        });
+    });
+</script>
 </body>
 </html>
